@@ -5,14 +5,15 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 
 @Entity
-public class User {
+@Table(name = "members")
+public class Member {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
+    @Column(name = "member_id")
     private Long id;
 
     @NotEmpty
-    private String username;
+    private String loginID;
 
     @NotEmpty
     private String password;
