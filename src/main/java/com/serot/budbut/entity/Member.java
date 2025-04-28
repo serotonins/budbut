@@ -23,4 +23,7 @@ public class Member {
 
     @Column(name = "nickname", nullable = false, length = 100)
     private String nickname;
+
+    @Column(name = "profile_url", nullable = false, length = 500)
+    private String profileUrl;
 }
