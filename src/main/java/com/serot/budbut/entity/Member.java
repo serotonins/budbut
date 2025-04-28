@@ -21,6 +21,6 @@ public class Member {
     @Email
     private String email;
 
-    @NotEmpty
+    @Column(name = "nickname", nullable = false, length = 100)
     private String nickname;
 }
